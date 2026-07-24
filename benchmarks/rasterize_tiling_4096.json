@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-24T20:30:05.3195099Z",
+  "source": {
+    "repository": "stanbot8/spatialdata",
+    "branch": "feat/987-raster-output-tiling",
+    "commit": "aab46d8ec96acb9213a51cd244397a12a2f0579f"
+  },
+  "environment": {
+    "cpu": "Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz",
+    "physical_cores": 6,
+    "logical_processors": 12,
+    "python": "3.12.11",
+    "numpy": "2.4.6",
+    "dask": "2026.7.1",
+    "dask_scheduler": "single-threaded"
+  },
+  "workload": {
+    "shape": [3, 4096, 4096],
+    "dtype": "float32",
+    "input_chunks": [3, 256, 256],
+    "output_size_mib": 192.0,
+    "sink": "memory-mapped file",
+    "repeats": 7
+  },
+  "variants": [
+    {
+      "tile_size": null,
+      "output_chunks": [3, 4096, 4096],
+      "largest_output_chunk_mib": 192.0,
+      "graph_tasks": 257,
+      "median_seconds": 4.399662999901921,
+      "peak_rss_delta_mib": 398.15625,
+      "checksum": 2.0
+    },
+    {
+      "tile_size": 1024,
+      "output_chunks": [3, 1024, 1024],
+      "largest_output_chunk_mib": 12.0,
+      "graph_tasks": 756,
+      "median_seconds": 4.009089299943298,
+      "time_change_percent": -8.9,
+      "peak_rss_delta_mib": 221.17578125,
+      "peak_rss_reduction_percent": 44.5,
+      "checksum": 2.0
+    },
+    {
+      "tile_size": 512,
+      "output_chunks": [3, 512, 512],
+      "largest_output_chunk_mib": 3.0,
+      "graph_tasks": 1220,
+      "median_seconds": 3.6818410004489124,
+      "time_change_percent": -16.3,
+      "peak_rss_delta_mib": 216.21875,
+      "peak_rss_reduction_percent": 45.7,
+      "checksum": 2.0
+    },
+    {
+      "tile_size": 256,
+      "output_chunks": [3, 256, 256],
+      "largest_output_chunk_mib": 0.75,
+      "graph_tasks": 2628,
+      "median_seconds": 4.499743899796158,
+      "time_change_percent": 2.3,
+      "peak_rss_delta_mib": 218.5234375,
+      "peak_rss_reduction_percent": 45.1,
+      "checksum": 2.0
+    }
+  ]
+}
