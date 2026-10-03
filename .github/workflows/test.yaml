@@ -77,16 +77,18 @@ jobs:
     - *clone
     - *setup-uv
     - name: create hatch environment
-      run: uvx hatch env create ${{ matrix.env.name }}
+      run: |-
+        uvx hatch env create ${{ matrix.env.name }}
     - name: list all all installed package versions
-      run: uvx hatch run ${{ matrix.env.name }}:uv pip list
+      run: |-
+        uvx hatch run ${{ matrix.env.name }}:uv pip list
     - name: run tests using hatch
       env:
         MPLBACKEND: agg
         PLATFORM: ${{ matrix.os }}
         DISPLAY: :42
-      run: uvx hatch run ${{ matrix.env.name }}:run-cov -v --color=yes -n auto 
-        --dist worksteal --run-network
+      run: |-
+        uvx hatch run ${{ matrix.env.name }}:run-cov -v --color=yes -n auto --dist worksteal --run-network
     - name: generate coverage report
       run: |
         # See https://coverage.readthedocs.io/page/config.html#run-patch
@@ -107,8 +109,11 @@ jobs:
     steps:
     - *clone
     - *setup-uv
-    - run: uv tool install hatch
-    - run: uvx prek run --all-files --show-diff-on-failure --color=always
+    - run: |-
+        uv tool install hatch
+    - run: |-
+        uvx prek run --all-files --show-diff-on-failure --color=always
+
 
   # One required check for branch protection, so it does not need updating whenever the matrix changes.
     needs:
@@ -149,7 +154,7 @@ jobs:
         AB_RUN_ID: ${{ github.run_id }}
         AB_HEAD_SHA: ea93a37203d187020c5d50a7f984dbf8c264a3ae
         AB_WORKFLOW_DIGEST: 
-          2d92920f6e845aed512a13a18f72b47beacf0421432a5d56b5dea68b4a219dfa
+          4cd8374c9e8e842a508d8030851a27446f132d7b47e6aac797dbb3d0462e0b9d
         AB_EVENT: ${{ github.event_name }}
         AB_SCHEDULE: ${{ github.event.schedule || '' }}
         AB_VARIABLES: ${{ toJSON(vars) }}
