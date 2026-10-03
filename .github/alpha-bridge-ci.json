@@ -1,0 +1,20 @@
+{
+  "definition_blob_sha1": {
+    ".github/workflows/alpha-bridge-ci-verify.yml": "0588ba302e7a97a9721ae7494f6b9aca053476b6",
+    ".github/workflows/test.yaml": "7d693134019b8400e76a0a52f5c67a492c3752a5"
+  },
+  "definition_sha256": {
+    ".github/workflows/alpha-bridge-ci-verify.yml": "d3dacd19a9c94cd86ca5ba24b075c35f3ff224d155ca5891f3b4325ece933dac",
+    ".github/workflows/test.yaml": "edcd405a90dc722c04ef1f1d870a8e5103865af9468ccffa4e3210bb822790f1"
+  },
+  "generator_sha256": "f238e5d52b0ec5c07f088af203f93698fbdea22a995856dc18c50f5365431353",
+  "schema": "alpha-bridge/fork-ci",
+  "source_branch": "main",
+  "source_commit": "ea93a37203d187020c5d50a7f984dbf8c264a3ae",
+  "source_repository": "scverse/spatialdata",
+  "version": 1,
+  "workflows": [
+    ".github/workflows/alpha-bridge-ci-verify.yml",
+    ".github/workflows/test.yaml"
+  ]
+}
