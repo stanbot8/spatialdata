@@ -1,17 +1,17 @@
 {
   "definition_blob_sha1": {
-    ".github/workflows/alpha-bridge-ci-verify.yml": "d19efeb3bd029beb4c50fd874010d2b930d20715",
-    ".github/workflows/build.yaml": "01f19057ff4122e6feb60fdbf91c7a0293784140",
-    ".github/workflows/release.yaml": "8f7d38d2b39afbd04754a7a2b0f0019682927780",
-    ".github/workflows/test.yaml": "d8db0ccf5f9a56b8d7628698f826ca7557718725"
+    ".github/workflows/alpha-bridge-ci-verify.yml": "e967624600c97e9308ad7039f50e4e5b3480a77f",
+    ".github/workflows/build.yaml": "934c6914d4a3c26e3720e0634037087e4986f232",
+    ".github/workflows/release.yaml": "d9b92eba16d54a9c4ada051ac109d458d267cd51",
+    ".github/workflows/test.yaml": "1fce7a56b7620ce6f951e97f27b1cfa67370ea30"
   },
   "definition_sha256": {
-    ".github/workflows/alpha-bridge-ci-verify.yml": "8fde9e2f5e1b37bbbb22794427ac6d217d8b18bc857606edd0b072e89c58b436",
-    ".github/workflows/build.yaml": "f84aae1bd7fe38d2dbdadf71791c2251a7cf31b0193c42d2f59fb1af4ca178dc",
-    ".github/workflows/release.yaml": "448bc36587d1b5beb38386f1e15959793e411c2f89858f00d3cb541be44e9f01",
-    ".github/workflows/test.yaml": "c74550b529808798fbdcedc25526aa859aee421e9a4d96fa2fa95e2bd00ee67c"
+    ".github/workflows/alpha-bridge-ci-verify.yml": "148b49359afdc3ab3ecde8d2957b2c4f4fc171da278ede186b799ac544b662f0",
+    ".github/workflows/build.yaml": "4cc886809100c98ccc4dcfa07b6d513a940ca84291c42c13a5ff69d9d7454442",
+    ".github/workflows/release.yaml": "2590be574540537d7435f5a84f6eecab818972cd821c3f7a3d84bd17b8f54ef6",
+    ".github/workflows/test.yaml": "677f3a19ce3c5fabee4b88b41e04e4f5f7122b2971ed01af8e138c35639a41ab"
   },
-  "generator_sha256": "f9d11fba5b604bac754f7ab7e40ccde549adf8e029da2ca91ed14e9ab94c0775",
+  "generator_sha256": "7b3db61baf202e3e7dd48fa25de24a19021fd832011e4b2a2f8fe59420da19d8",
   "schema": "alpha-bridge/fork-ci",
   "source_branch": "main",
   "source_commit": "ea93a37203d187020c5d50a7f984dbf8c264a3ae",
